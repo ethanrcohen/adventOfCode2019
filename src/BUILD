@@ -1,4 +1,6 @@
 load("@io_bazel_rules_kotlin//kotlin:kotlin.bzl", "kt_jvm_library")
+load("@io_bazel_rules_kotlin//kotlin:kotlin.bzl", "kt_jvm_binary")
+
 
 kt_jvm_library(
     name="aoc_lib",
@@ -12,3 +14,8 @@ java_binary(
     runtime_deps=[":aoc_lib"]
 )
 
+java_binary(
+    name="Problem2",
+    main_class="src.Problem2",
+        runtime_deps=[":aoc_lib"]
+)
