@@ -7,7 +7,7 @@ kt_jvm_library(
 )
 
 java_binary(
-    name = "problem1",
+    name = "Problem1",
     main_class = "src.Problem1",
     runtime_deps=[":aoc_lib"]
 )
